@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accesorios iPhone - Inicio </title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jaifon Store - Inicio</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo de Accesorios para iPhone" class="logo">
+        <img src="/assets/logo1.png" alt="Logo de Accesorios para iPhone" class="logo">
         <h1>Accesorios para iPhone</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="cargadores.html">Cargadores</a></li>
-                <li><a href="auriculares.html">Auriculares</a></li>
-                <li><a href="fundas.html">Fundas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/templates/cargadores.html">Cargadores</a></li>
+                <li><a href="/templates/auriculares.html">Auriculares</a></li>
+                <li><a href="/templates/fundas.html">Fundas</a></li>
+                <li><a href="/templates/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -25,24 +25,41 @@
         <p>Ofrecemos una amplia gama de productos para mejorar tu experiencia con tu iPhone.</p>
         <div class="services">
             <div class="service">
-                <a href="cargadores.html">
-                    <img src="cargadores1.jpg" alt="Cargadores para iPhone">
+                <a href="/templates/cargadores.html">
+                    <img src="/assets/cargadorcanva.jpg" alt="Cargadores para iPhone">
                     <p>Compra Cargadores</p>
                 </a>
             </div>
             <div class="service">
-                <a href="auriculares.html">
-                    <img src="auriculares1.jpg" alt="Auriculares para iPhone">
+                <a href="/templates/auriculares.html">
+                    <img src="/assets/auris.jpg" alt="Auriculares para iPhone">
                     <p>Compra Auriculares</p>
                 </a>
             </div>
             <div class="service">
-                <a href="fundas.html">
-                    <img src="fundas4.jpg" alt="Fundas para iPhone">
+                <a href="/templates/fundas.html">
+                    <img src="/assets/fundas9.jpg" alt="Fundas para iPhone">
                     <p>Compra Fundas</p>
                 </a>
             </div>
         </div>
+
+        <h2>Contáctanos</h2>
+        <form action="/enviar-consulta" method="post" class="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        
+            <label for="consulta">Consulta:</label>
+            <textarea id="consulta" name="consulta" rows="4" required></textarea>
+        
+            <input type="submit" value="Enviar">
+        </form>
     </main>
     <footer>
         <p>&copy; 2024 Accesorios para iPhone. Todos los derechos reservados.</p>
